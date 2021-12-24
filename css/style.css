@@ -134,8 +134,6 @@ body {
   padding-bottom: 200px;
 }
 .hero-container {
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 .hero-tittle {
@@ -146,7 +144,10 @@ body {
   text-transform: uppercase;
   color: var(--main-background-color);
   margin-bottom: 30px;
+  margin-left: 120px;
   width: 696px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero-button {
   font-family: inherit;
@@ -156,28 +157,26 @@ body {
   letter-spacing: 0.06em;
   color: var(--main-background-color);
   background-color: var(--links-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   min-width: 200px;
   min-height: 50px;
+  border: none;
+  border-radius: 4px;
 }
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
 }
 /* ---------------ОПИСАНИЕ ОСОБЕННОСТЕЙ----------- */
 
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -28px;
 }
 .benefits-item {
-  width: 270px;
-}
-.benefits-item:not(:last-child) {
-  margin-right: 28px;
+  width: calc(100% / 4 - 28px);
+  margin-left: 28px;
 }
 .benefits-tittles {
   font-weight: 700;
@@ -202,9 +201,11 @@ body {
 .examples-list {
   display: flex;
   flex-wrap: wrap;
+  margin-left: -30px;
 }
-.examples-item:not(:last-child) {
-  margin-right: 30px;
+.examples-item {
+  width: calc(100% / 3 -30px);
+  margin-left: 30px;
 }
 /* ----------------ФОТО КОМАНДЫ----------------- */
 
@@ -229,9 +230,12 @@ body {
 }
 .team-list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
 }
-.team-item:not(:last-child) {
-  margin-right: 30px;
+.team-item {
+  width: calc(100% / 4 - 30px);
+  margin-left: 30px;
 }
 .team-information {
   background-color: var(--main-background-color);
@@ -255,6 +259,8 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  display: block;
+  margin-bottom: 20px;
 }
 .white-studio {
   color: var(--main-background-color);
@@ -268,7 +274,6 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-background-color);
-  margin-top: 20px;
 }
 .footer-address-link:hover,
 .footer-address-link:focus {
@@ -286,6 +291,12 @@ body {
   color: var(--links-text-color);
 }
 /* ----------------ПОРТФОЛИО---------------- */
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -30px;
+}
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -295,18 +306,57 @@ body {
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
   background: var(--second-background-color);
+  margin-bottom: 34px;
+  border: var(--links-text-color);
+  border-radius: 4px;
+  max-height: 38px;
+}
+.portfolio-btn-item:not(:last-child) {
+  margin-right: 8px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus,
 .portfolio-btn:active {
   color: var(--main-background-color);
   background-color: var(--links-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.all-btn {
+  max-width: 73px;
+}
+.web-site-btn {
+  max-width: 128px;
+}
+.app-btn {
+  max-width: 145px;
+}
+.design-btn {
+  max-width: 103px;
+}
+.marketing-btn {
+  max-width: 130px;
+}
+.portfolio-link-item {
+  width: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+/* .portfolio-link-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+  margin-bottom: 30px;
+} */
+.portfolio-information {
+  padding: 20px 24px 20px 24px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 .portfolio-tittles {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--tittle-text-color);
+  margin-bottom: 4px;
 }
 .portfolio-text {
   font-size: 16px;
