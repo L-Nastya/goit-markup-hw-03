@@ -63,7 +63,7 @@ body {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -94,8 +94,6 @@ body {
   letter-spacing: 0.02em;
   color: var(--tittle-text-color);
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .header-link:hover,
 .header-link:focus,
@@ -189,7 +187,9 @@ body {
   color: var(--primary-text-color);
 }
 /* --------------ПРИМЕРЫ РАБОТ------------------ */
-
+.examples {
+  padding-top: 0;
+}
 .examples-tittle {
   font-size: 36px;
   line-height: 1.17;
@@ -309,6 +309,7 @@ body {
   border: var(--links-text-color);
   border-radius: 4px;
   max-height: 38px;
+  padding: 6px 22px 6px 22px;
 }
 .portfolio-btn-item:not(:last-child) {
   margin-right: 8px;
@@ -320,21 +321,6 @@ body {
   background-color: var(--links-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-.all-btn {
-  max-width: 73px;
-}
-.web-site-btn {
-  max-width: 128px;
-}
-.app-btn {
-  max-width: 145px;
-}
-.design-btn {
-  max-width: 103px;
-}
-.marketing-btn {
-  max-width: 130px;
 }
 .portfolio-link-item {
   width: calc(100% / 3 - 30px);
